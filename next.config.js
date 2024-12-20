@@ -3,8 +3,7 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	images: {
-		domains: ["cdn.sanity.io"],
-		unoptimized: true
+		domains: ["cdn.sanity.io"]
 	},
 	webpack(config) {
 		config.module.rules.push({
@@ -13,9 +12,7 @@ const nextConfig = {
 			use: ["@svgr/webpack"]
 		});
 		return config;
-	},
-	basePath: "/my-portfolio",
-	assetPrefix: "/my-portfolio"
+	}
 };
 
 module.exports = nextConfig;
