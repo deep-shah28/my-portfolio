@@ -16,9 +16,8 @@ export function WelcomeSection() {
 
 	let [count, setCount] = useState(0);
 	const [text] = useState([
-		"build Flutter apps for Android/iOS",
-		"convert design into modern UI",
-		"build interactive UI using React",
+		"Integate modern ui into javascript frameworks",
+		"develop websites using React.js",
 		"develop websites using Next.js"
 	]);
 
@@ -52,7 +51,7 @@ export function WelcomeSection() {
 							}}
 						>
 							<p>
-								Hi, I&apos;m <mark>Vasile</mark> a <mark>passionate</mark> software developer.
+								Hi, I&apos;m <mark>Deep Shah</mark> a <mark>passionate</mark> software developer.
 							</p>
 						</h1>
 
@@ -70,16 +69,7 @@ export function WelcomeSection() {
 								<span
 									className="absolute flex flex-col transition-all duration-500 ease-in-expo"
 									style={{
-										top:
-											count === 0
-												? "0"
-												: count === 1
-												? "-100%"
-												: count === 2
-												? "-200%"
-												: count === 3
-												? "-300%"
-												: "0",
+										top: count === 0 ? "0" : count === 1 ? "-100%" : count === 2 ? "-200%" : "0",
 										left: "13px"
 									}}
 								>
